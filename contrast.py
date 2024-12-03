@@ -54,7 +54,6 @@ while(cap.isOpened()):
 
         combined = np.hstack((frame_resized, cv2.cvtColor(mask_resized, cv2.COLOR_GRAY2BGR), cv2.cvtColor(hog_image_uint8, cv2.COLOR_GRAY2BGR)))
 
-
         cv2.imshow('Frame, Mask, and HOG', combined)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
